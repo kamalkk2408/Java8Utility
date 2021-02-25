@@ -12,6 +12,8 @@
         6. Can contain default and static methods
         7. Pillars Interfaces in Java8
             1. Consumer
+                1. accept()
+                2. default method : andThen(Consumer<>)
             2. Predicate
             3. Function
             4. Supplier
