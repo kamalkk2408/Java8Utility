@@ -6,4 +6,6 @@
     - Functional Interface : 
         1. @FunctionalInterface
         2. Interface contains only one function
+         
+    
         
