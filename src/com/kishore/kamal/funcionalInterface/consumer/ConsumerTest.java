@@ -1,5 +1,6 @@
 package com.kishore.kamal.funcionalInterface.consumer;
 
+import java.util.Arrays;
 import java.util.function.Consumer;
 
 public class ConsumerTest {
@@ -9,7 +10,6 @@ public class ConsumerTest {
 
         Consumer<String> consumer1= (s) -> System.out.println(s.toLowerCase());
         consumer1.accept("Java 8");
-
 
         consumer.andThen(consumer1).accept("Java 8");
 
