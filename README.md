@@ -39,6 +39,14 @@
                         1. apply()
                         2. f1.andThen(f2).apply("java");
                         3. fi.compose(f2).apply("java");
+                    6. BiFunction: 
+                        1. BiFunction<T,U, R>    : T & U are input argument & R is output.
+                        2. It extends function interface
+                        3. BiFunction<String, String, String> f = (a, b) -> (a +" : "+ b);
+                        4. BiFunction<List<Person>, Predicate<Person>, Map<String,Double>> f;
+                    7. UnaryOperator<T> : input/output type is T
+                        1. 
+                    
             4. Supplier
         8.
          
