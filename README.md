@@ -44,10 +44,19 @@
                         2. It extends function interface
                         3. BiFunction<String, String, String> f = (a, b) -> (a +" : "+ b);
                         4. BiFunction<List<Person>, Predicate<Person>, Map<String,Double>> f;
-                    7. UnaryOperator<T> : input/output type is T
-                        1. 
+                    7. UnaryOperator<T> :
+                        1. input/output type is T
+                        2. It extends Function Interface
+                    8. BinaryOperator<T,T>
+                        1. maxBy & minBy methods & You need to have comparator if you want to use it .
+                        2. Extends Bi Function
+                        3. Comparator<Integer> comp = (a,b) -> a.compareTo(b);
+                            BinaryOperator<Integer> bo = BinaryOperator.maxBy(comp);
+                            bo.apply(199,190);
                     
-            4. Supplier
+            4. Supplier<T>: 
+                1. T get() : it will return the data. 
+                2. 
         8.
          
     
