@@ -26,9 +26,19 @@
                     4. negate
                     5. Predicate < Integer> lessThan = a -> (a >= 50);
                     6. lessThan(p1).and(p2).or(p3).test(150);
-                    
-
+                    7. BiPredicate
+                        1. BiPredicate<Integer, String > p = (height, gender) -> ();
+                    8. Predicate & Bi-Predicate are siblings in a way.
             3. Function
+                1. Inteterface Function<T,R> 
+                    1. We can assign an object to a function type and pass it. 
+                    2. Its a feature introduced in java 8.
+                    3. T is input & R is the output
+                    4. Function<String, String> f1 = name -> name.toUpperCase();
+                    5. Methods : 
+                        1. apply()
+                        2. f1.andThen(f2).apply("java");
+                        3. fi.compose(f2).apply("java");
             4. Supplier
         8.
          
