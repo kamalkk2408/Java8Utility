@@ -19,6 +19,15 @@
                 5. BiConsumer: 
                     1. BiConsumer<Integer, Integer> con1 = (a,b) -> System.out.println(a + b);
             2. Predicate
+                1. always returns true/false(boolean)
+                    1. test()
+                    2. or
+                    3. and
+                    4. negate
+                    5. Predicate < Integer> lessThan = a -> (a >= 50);
+                    6. lessThan(p1).and(p2).or(p3).test(150);
+                    
+
             3. Function
             4. Supplier
         8.
