@@ -63,7 +63,12 @@
                     2. For Eg: Integer::compare
                 2. Reference to an instance method.
                 3. Reference to a constructor
-            2. 
+        9. Local Variables : 
+            1. Lambdas's are allowed to use local variable but not allowed for modification{Effectively Final}
+            2. Concurrency Operation are effective in that way
+            3. Class Level variable or instance variable are allowed to modify
+            4. Effectively Final
+            
          
     
         
