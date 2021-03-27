@@ -56,8 +56,14 @@
                     
             4. Supplier<T>: 
                 1. T get() : it will return the data. 
-                2. 
-        8.
+        8. Method-Reference : It is a feature introduced in Java8, used for refering to lambda expression.
+            1. Types of Method Reference : 
+                1. Reference to Static method
+                    1. ClassName :: method name
+                    2. For Eg: Integer::compare
+                2. Reference to an instance method.
+                3. Reference to a constructor
+            2. 
          
     
         
