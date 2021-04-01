@@ -68,6 +68,23 @@
             2. Concurrency Operation are effective in that way
             3. Class Level variable or instance variable are allowed to modify
             4. Effectively Final
+        10. Streams : Sequence of Data Elements
+            1. Can be performed either Sequentially or Parallel.
+            2. Do not support indexed access
+            3. Lazy access supports
+            4. Designed for Lambdass
+            5. Stream API: 
+                1. Streams don't change the original data structure, they only provide the result as per the pipelined methods.
+                2. Each intermediate operation is lazily executed and returns a stream as a result.
+                3. APIs : 
+                    1. Transform one type to another type
+                    2. Not related to Map Collection
+                    3. stream().map()
+                    4. 
+            6. About Computation on Data.
+            7. Internal Iteration using forEach
+            8. Only one Iteration on Stream is possible
+            9. peek() is used for debugging as we can access single element in this method
             
          
     
