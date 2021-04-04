@@ -77,10 +77,21 @@
                 1. Streams don't change the original data structure, they only provide the result as per the pipelined methods.
                 2. Each intermediate operation is lazily executed and returns a stream as a result.
                 3. APIs : 
-                    1. Transform one type to another type
-                    2. Not related to Map Collection
-                    3. stream().map()
-                    4. 
+                    1. map()
+                        1. Transform one type to another type
+                        2. Not related to Map Collection
+                        3. stream().map()
+                    2. flatMap()
+                        1. Transform one type to another type.
+                        2. Used to flatten a stream of collection
+                        3. Apply one-to-many transformation to the elements.
+                        4. Creates a new Stream once flatten the elements
+                        5. stream().flatMap(List::stream)
+                        
+                    3. sorted(Comparator.comparing(Person::getName).reversed)
+                    4. distinct()
+                    5. count()
+                    6. filter()
             6. About Computation on Data.
             7. Internal Iteration using forEach
             8. Only one Iteration on Stream is possible
