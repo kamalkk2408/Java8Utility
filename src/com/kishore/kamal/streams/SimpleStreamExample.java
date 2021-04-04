@@ -43,10 +43,18 @@ public class SimpleStreamExample {
         System.out.println("\n..............\n Sorted example");
         pList.stream().flatMap(List::stream).sorted(Comparator.comparing(a -> a.name)).collect(Collectors.toList()).stream().forEach(System.out::println);
 
-        System.out.println("\n..............\n Count example :: " +  pList.stream().flatMap(List::stream).sorted(Comparator.comparing(a -> a.name)).collect(Collectors.toList()).stream().count());
-        pList.stream().flatMap(List::stream).sorted(Comparator.comparing(a -> a.name)).collect(Collectors.toList()).stream().count();
+        countExample(pList);
+
+        //reduce
+        System.out.println(personList2.stream().map(p -> p.getId()).reduce( 0, (a,b)-> (a+b)));
 
     }
+
+    private static void countExample(List<List<Person>> pList) {
+        System.out.println("\n..............\n Count example :: " +  pList.stream().flatMap(List::stream).sorted(Comparator.comparing(a -> a.name)).collect(Collectors.toList()).stream().count());
+        pList.stream().flatMap(List::stream).sorted(Comparator.comparing(a -> a.name)).collect(Collectors.toList()).stream().count();
+    }
+
     static class Person implements Comparable<Person>{
         int id;
         String name;

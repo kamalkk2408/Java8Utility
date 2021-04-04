@@ -79,7 +79,7 @@
                 3. APIs : 
                     1. map()
                         1. Transform one type to another type
-                        2. Not related to Map Collection
+                        2. Not related to Map   Collection
                         3. stream().map()
                     2. flatMap()
                         1. Transform one type to another type.
@@ -87,16 +87,32 @@
                         3. Apply one-to-many transformation to the elements.
                         4. Creates a new Stream once flatten the elements
                         5. stream().flatMap(List::stream)
-                        
-                    3. sorted(Comparator.comparing(Person::getName).reversed)
-                    4. distinct()
-                    5. count()
-                    6. filter()
+                    3. mapToint(i ->(i)).sum()//count()
+                    4. .reduce(a, (a,b ) -> a* b) : first parameter is initial value & second is bifunction
+                    5. Colllectors.maxBy()
+                    6. Collectors.minBy()
+                    7. .limit(2)
+                    8. .skip(2)
+                    9. .allMatch()
+                    10. .anyMatch()
+                    11. .findFirst()
+                    12. findAny()
+                    13. sorted(Comparator.comparing(Person::getName).reversed)
+                    14. distinct()
+                    15. count()
+                    16. filter()
             6. About Computation on Data.
             7. Internal Iteration using forEach
             8. Only one Iteration on Stream is possible
             9. peek() is used for debugging as we can access single element in this method
-            
+        11. Factory Method's
+            1. Stream.iterate
+                1. Generates Infinite sequence
+                2. i/p : Supplier
+            2. Stream.generate
+                1. i/p (initialValue, UnaryOperator)
+            3. Stream.of
+                1. 
          
     
         
