@@ -113,6 +113,17 @@
                 1. i/p (initialValue, UnaryOperator)
             3. Stream.of
                 1. 
+        12. Numeric Stream
+            1.Types : 
+                1.IntStream -> primitive int 
+                    1. Boxing and unboxing doesn't happen in this case
+                    2. IntStream iStream = IntSream.rangeClosed(1,6);
+                    3.iStream.sum();
+                2. LongStream : for long dataType
+            2.Factory Methods: 
+                1. IntStream.range(x, y) : y is not included in this case
+                2. IntStream.rangeClosed(x,y) : y is included in this case
+        
          
     
         
