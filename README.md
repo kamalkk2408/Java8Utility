@@ -123,6 +123,28 @@
             2.Factory Methods: 
                 1. IntStream.range(x, y) : y is not included in this case
                 2. IntStream.rangeClosed(x,y) : y is included in this case
+                3. max(), min(), average()
+                4. boxed() & mapToInt(Integer::intValue)
+                5. mapToDouble(x -> x)
+                6. mapToLong(x -> x)
+                7. mapToObject(x -> x)
+        13. Terminal Operation
+            1. Join
+                1. Collectors.joining()
+                2. Collectors.joining("-")
+                2. Collectrs.joining("-", "[","]");
+            2. mapping()
+                1. collect(mapping(Person::getName, Collectors.toList()));
+                2. we can skip map using above syntax
+            3. count()
+                1. collect(Collectors.counting())
+                
+                            
+             
+                
+                
+        
+                
         
          
     
