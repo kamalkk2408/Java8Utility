@@ -138,6 +138,22 @@
                 2. we can skip map using above syntax
             3. count()
                 1. collect(Collectors.counting())
+            4. summingInt()
+                1. Collectors.summingInt(Person::getKids)
+            5. averagingInt()
+                1. Collectors.averagingInt(Person::getHeight)
+            6. GroupingBy:
+                1. Collectors.groupBy(Person::getGender);
+                2. Collectors.groupingBy(a -> "bbb".compareTo(a) >0 ?"Greater": "Smaller")
+            7. Multilevel Grouping : 
+                1. collect(Collectors.groupingBy(Person::getName, groupingBy()));
+                2. collect(Collectors.groupingBy(Person::getName, sumingInt()));
+                3. collect(Collectors.groupingBy(Person::getName, HashMap::new , Collectors.toList()));
+            8. PartitioningBy: 
+                1.will always return map with key as boolean && based on a predicate
+                2. partitionBy(predicate)
+                3. partitionBy(predicate, Collectors)
+                
                 
                             
              
