@@ -153,6 +153,24 @@
                 1.will always return map with key as boolean && based on a predicate
                 2. partitionBy(predicate)
                 3. partitionBy(predicate, Collectors)
+        14. Sequential vs Parallel
+            1. Sequential : 
+                1. Works just like for-loop using a single core 
+                2. Runs on Single Core
+                3. Supports Lazy evaluation
+                4. Use based on the required task
+            2. Parallel : 
+                1. Divide the provided task into many and run them in different threads.
+                2. Runs into multiple core
+                3. Supports Lazy evaluation
+                4. Use based on the required task
+        15. Optional: 
+            1. Optional is a container Object usedd to contain not-null objects
+            2. used to represent null with absent value
+            3. Has various utility methodss to facilitate code to handle values as available or not available instead of checking null values
+            4. Null checks are not required and no more NPE at run-time
+            5. No more boiler plate code
+            
                 
                 
                             
